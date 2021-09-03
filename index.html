@@ -35,10 +35,12 @@
       <p>Ciao! In questo sito interamente creato dallo staff del gruppo troverai degli <strong>approfondimenti</strong> al regolamento del gruppo stesso.
       Questi approfondimenti hanno come principale scopo quello di <strong>evitare spiacevoli inconvenienti e fraintendimenti</strong> con gli utenti. <br>
       <strong>Non è obbligatorio</strong> leggere gli approfondimenti, ma, nel caso avessi un <strong>dubbio</strong>, puoi sempre consultarli scrivendo nel gruppo <i>/regole</i>. <br>
-      Gli admin e i moderatori, nel caso punissero un'utente del gruppo, possono <strong>fare riferimento a questi approfondimenti.</strong> <br>
+      Gli admin e i moderatori, nel caso punissero un utente del gruppo, possono <strong>fare riferimento a questi approfondimenti.</strong> <br>
       Per iniziare quindi, <strong>premi l'icona in alto a sinistra</strong> e scegli l'argomento che vuoi approfondire.
       </p>
       <br>
+
+      <button id=darkmode>Light Mode</button>
     </div>
 
 <div id="fine">
@@ -100,4 +102,46 @@
 
 
 </body>
+
+<!-- Script per il pulsante della Dark Mode/Light Mode -->
+<script>
+
+  /*Il css controlla innanzitutto il tema di sistema per stabilire se essere dark o light
+    se devi cambiare qualcosa vai anche su style.css e controlla "@media (prefers-color-scheme: light)"*/
+  const darkModeButton = document.getElementById("darkmode");
+  const h1 = document.querySelectorAll("h1");
+  darkModeButton.onclick = function()
+  {
+    if (document.body.style.color == "black")
+    {
+      document.getElementById("testa").style.backgroundColor = "#282828";
+      document.getElementById("principale").style.backgroundColor = "#282828";
+      document.getElementById("fine").style.backgroundColor = "#282828";
+      document.body.style.color = "white";
+      for (var i=0; i<h1.length; i++)
+      {
+        h1[i].style.color = "white";
+      }
+      //h1.style.color = "white";
+    }
+    else
+    {
+      document.getElementById("testa").style.backgroundColor = "white";
+      document.getElementById("principale").style.backgroundColor = "white";
+      document.getElementById("fine").style.backgroundColor = "white";
+      document.body.style.color = "black";
+      for (var i=0; i<h1.length; i++)
+      {
+        h1[i].style.color = "black";
+      }
+
+    }
+    
+
+  }
+
+
+</script>
+
+
 </html>
