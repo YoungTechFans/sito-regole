@@ -498,3 +498,32 @@ a:link {
   background-color: transparent;
   
 }
+
+
+/* controlla il tema di sistema */
+@media (prefers-color-scheme: light) {
+  #testa
+  {
+    background-color: white;
+  }
+
+  #principale
+  {
+    background-color: white;
+  }
+
+  #fine
+  {
+    background-color: white;
+  }
+
+  body
+  {
+    color: black;
+  }
+
+  h1
+  {
+    color: black;
+  }
+}
