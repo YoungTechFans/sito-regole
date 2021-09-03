@@ -37,7 +37,6 @@
         Utilizza le funzioni "<i>programma messaggio</i>", "<i>modifica</i>" "<i>elimina</i>" e "<i>rispondi</i>" per <strong>comunicare</strong> e <strong>farti aiutrare in modo chiaro</strong>.</p>
       </p>
       <br>
-      <button id=darkmode>Light Mode</button>
     </div>
 
 <div id="fine">
@@ -50,64 +49,66 @@
   <p>Developed by Dardan Bytyqi & Siv Pigna</p>
 </div>
 
-  <div class="menu-wrap">
-    <!--per toggler si intende che l'oggetto (in questo caso il pulsante per la navbar) passa da acceso a spento-->
-    <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
-    <div class="menu">
+<div class="menu-wrap">
+  <!--per toggler si intende che l'oggetto (in questo caso il pulsante per la navbar) passa da acceso a spento-->
+  <input type="checkbox" class="toggler">
+  <div class="hamburger"><div></div></div>
+  <div class="menu">
+    <div>
       <div>
-        <div>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="spam.html">Spam</a></li>
-            <li><a href="pirateria.html">Pirateria</a></li>
-            <li><a href="rispetto.html">Rispetto</a></li>
-            <li><a href="assistenza.html">Assistenza</a></li>
-            <li><a href="admin.html">Admin</a></li>
-            <li><a href="voip.html">Voip</a></li>
-          </ul>
-        </div>
+        <ul>
+          <button id=darkmode>Light Mode</button>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="spam.html">Spam</a></li>
+          <li><a href="pirateria.html">Pirateria</a></li>
+          <li><a href="rispetto.html">Rispetto</a></li>
+          <li><a href="assistenza.html">Assistenza</a></li>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="voip.html">Voip</a></li>
+          <li><a href="punizioni.html">Punizioni</a></li>
+        </ul>
       </div>
     </div>
   </div>
+</div>
 </body>
+
 <script>
 
-  /*Il css controlla innanzitutto il tema di sistema per stabilire se essere dark o light
-    se devi cambiare qualcosa vai anche su style.css e controlla "@media (prefers-color-scheme: light)"*/
-  const darkModeButton = document.getElementById("darkmode");
-  const h1 = document.querySelectorAll("h1");
-  darkModeButton.onclick = function()
+/*Il css controlla innanzitutto il tema di sistema per stabilire se essere dark o light
+  se devi cambiare qualcosa vai anche su style.css e controlla "@media (prefers-color-scheme: light)"*/
+const darkModeButton = document.getElementById("darkmode");
+const h1 = document.querySelectorAll("h1");
+darkModeButton.onclick = function()
+{
+  if (document.body.style.color == "black")
   {
-    if (document.body.style.color == "black")
+    document.getElementById("testa").style.backgroundColor = "#282828";
+    document.getElementById("principale").style.backgroundColor = "#282828";
+    document.getElementById("fine").style.backgroundColor = "#282828";
+    document.body.style.color = "white";
+    for (var i=0; i<h1.length; i++)
     {
-      document.getElementById("testa").style.backgroundColor = "#282828";
-      document.getElementById("principale").style.backgroundColor = "#282828";
-      document.getElementById("fine").style.backgroundColor = "#282828";
-      document.body.style.color = "white";
-      for (var i=0; i<h1.length; i++)
-      {
-        h1[i].style.color = "white";
-      }
-      //h1.style.color = "white";
+      h1[i].style.color = "white";
     }
-    else
+    //h1.style.color = "white";
+  }
+  else
+  {
+    document.getElementById("testa").style.backgroundColor = "white";
+    document.getElementById("principale").style.backgroundColor = "white";
+    document.getElementById("fine").style.backgroundColor = "white";
+    document.body.style.color = "black";
+    for (var i=0; i<h1.length; i++)
     {
-      document.getElementById("testa").style.backgroundColor = "white";
-      document.getElementById("principale").style.backgroundColor = "white";
-      document.getElementById("fine").style.backgroundColor = "white";
-      document.body.style.color = "black";
-      for (var i=0; i<h1.length; i++)
-      {
-        h1[i].style.color = "black";
-      }
-
+      h1[i].style.color = "black";
     }
-    
 
   }
 
 
-</script>
+}
 
+
+</script>
 </html>
