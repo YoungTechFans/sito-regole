@@ -492,3 +492,9 @@ ul li a:hover{
   background-color: #7232bd;
 
 }
+
+a:link {
+  color: #007eef;
+  background-color: transparent;
+  
+}
