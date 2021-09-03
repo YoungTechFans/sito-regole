@@ -1,90 +1,91 @@
-body{
-            background-color: rgb(0, 76, 255);
-            margin: 10px;
-        }
-        #immagine1{
-            position: absolute;
-            top: 2px;
-            left: 40px;
-            width: 160px;
-            height: 160px;
+  body{
+              background-color: rgb(30, 144, 255);
+              margin: 10px;
+          }
+          #immagine1{
+              position: absolute;
+              top: 2px;
+              left: 40px;
+              width: 160px;
+              height: 160px;
 
-        }
-        #immagine2{
-            position: absolute;
-            top: 2px;
-            right: 20px;
-            width: 160px;
-            height: 160px;
+          }
+          #immagine2{
+              position: absolute;
+              top: 2px;
+              right: 20px;
+              width: 160px;
+              height: 160px;
 
-        }
-        #principale{
-            top: 0.5cm;
-            text-align: justify;
-            position: relative;
-            margin: 0 auto;
-            width: 97,1%;
-            height: auto;
-            padding: 20px;
-            background-color: white;
-            border-radius: 20px;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-        }
-        #testa{
-            text-align: center;
-            position: relative;
-            width: auto;
-            height: auto;
-            top: 0px;
-            left: 0px;
-            background-color: white;
-            padding: 30px;
-            border-radius: 5px;
-            -moz-border-radius: 10px;
-            -webkit-border-radius: 10px;
-        }
-        h1{
-            font-size: auto;
-            font-family: 'Open Sans', sans-serif;;
-            color: black;
-        }
+          }
+          #principale{
+              top: 0.5cm;
+              text-align: justify;
+              position: relative;
+              margin: 0 auto;
+              width: 97,1%;
+              height: auto;
+              padding: 20px;
+              background-color: #282828;
+              border-radius: 20px;
+              -moz-border-radius: 10px;
+              -webkit-border-radius: 10px;
+          }
+          #testa{
+              text-align: center;
+              position: relative;
+              width: auto;
+              height: auto;
+              top: 0px;
+              left: 0px;
+              background-color: #282828;
+              padding: 30px;
+              border-radius: 5px;
+              -moz-border-radius: 10px;
+              -webkit-border-radius: 10px;
+          }
+          h1{
+              font-size: auto;
+              font-family: 'Open Sans', sans-serif;;
+              color: white;
+          }
 
-        #telegramlogo
-        {
-            border-radius: 200px;
-        }
-        :root {
-          --primary-color: rgb(0, 76, 255);
-          --overlay-color: rgba(24, 39, 51 , 0.85);
-          --menu-speed: 0.75s;
-        }
-        
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-        }
-        
-        body {
+          #telegramlogo
+          {
+              border-radius: 200px;
+          }
+          :root {
+            --primary-color: rgb(0, 76, 255);
+            --overlay-color: rgba(24, 39, 51 , 0.85);
+            --menu-speed: 0.75s;
+          }
+
+          * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+
+          body {
           font-family: 'Roboto', sans-serif;
           line-height: 1.4;
+          color: white;
         }
-        
+
         .container {
           max-width: 960px;
-          margin: auto;
+          margin: auto
           overflow: hidden;
           padding: 0 3rem;
         }
-        
+
         .showcase {
           background: var(--primary-color);
           color: #fff;
           height: 100vh;
           position: relative;
         }
-        
+
         .showcase:before {
           content: '';
           background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
@@ -95,7 +96,7 @@ body{
           height: 100%;
           z-index: -1;
         }
-        
+
         .showcase .showcase-inner {
           display: flex;
           flex-direction: column;
@@ -104,15 +105,15 @@ body{
           text-align: center;
           height: 100%;
         }
-        
+
         .showcase h1 {
-          font-size: 4rem;
+        -size: 4rem;
         }
-        
+
         .showcase p {
           font-size: 1.3rem;
         }
-        
+
         .btn {
           display: inline-block;
           border: none;
@@ -123,19 +124,19 @@ body{
           transition: opacity 1s ease-in-out;
           text-decoration: none;
         }
-        
+
         .btn:hover {
           opacity: 0.7;
         }
-        
-        
+
+
         .menu-wrap {
-          position: fixed;
-          top: 0;
-          left: 0;
+          position: absolute;
+          top: 16px;
+          left: 16px;
           z-index: 1;
         }
-        
+
         .menu-wrap .toggler {
           position: absolute;
           top: 0;
@@ -146,22 +147,22 @@ body{
           height: 50px;
           opacity: 0;
         }
-        
+
         .menu-wrap .hamburger {
           position: absolute;
           top: 0;
           left: 0;
           z-index: 1;
-          width: 60px;
-          height: 60px;
+          width: 55px;
+          height: 55px;
           padding: 1rem;
-          background: var(--primary-color);
+          background:  rgb(30, 144, 255);
           display: flex;
           align-items: center;
           justify-content: center;
         }
-        
-        
+
+
         .menu-wrap .hamburger > div {
           position: relative;
           flex: none;
@@ -173,8 +174,8 @@ body{
           justify-content: center;
           transition: all 0.4s ease;
         }
-        
-        
+
+
         .menu-wrap .hamburger > div::before,
         .menu-wrap .hamburger > div::after {
           content: '';
@@ -185,44 +186,44 @@ body{
           height: 2px;
           background: inherit;
         }
-        
-        
+
+
         .menu-wrap .hamburger > div::after {
           top: 10px;
         }
-        
-        
+
+
         .menu-wrap .toggler:checked + .hamburger > div {
           transform: rotate(135deg);
         }
-        
-        
+
+
         .menu-wrap .toggler:checked + .hamburger > div:before,
         .menu-wrap .toggler:checked + .hamburger > div:after {
           top: 0;
           transform: rotate(90deg);
         }
-        
-        
+
+
         .menu-wrap .toggler:checked:hover + .hamburger > div {
           transform: rotate(225deg);
         }
-        
-        
+
+
         .menu-wrap .toggler:checked ~ .menu {
           visibility: visible;
         }
-        
+
         .menu-wrap .toggler:checked ~ .menu > div {
           transform: scale(1);
           transition-duration: var(--menu-speed);
         }
-        
+
         .menu-wrap .toggler:checked ~ .menu > div > div {
           opacity: 1;
           transition:  opacity 0.4s ease 0.4s;
         }
-        
+
         .menu-wrap .menu {
           position: fixed;
           top: 0;
@@ -235,10 +236,10 @@ body{
           align-items: center;
           justify-content: center;
         }
-        
+
         .menu-wrap .menu > div {
           background: var(--overlay-color);
-          
+
           width: 9000vw;
           height: 9000vw;
           display: flex;
@@ -248,7 +249,7 @@ body{
           transform: scale(0);
           transition: all 0.4s ease;
         }
-        
+
         .menu-wrap .menu > div > div {
           text-align: center;
           max-width: 90vw;
@@ -256,14 +257,14 @@ body{
           opacity: 0;
           transition: opacity 0.4s ease;
         }
-        
+
         .menu-wrap .menu > div > div > ul > li {
           list-style: none;
           color: #fff;
           font-size: 1.5rem;
           padding: 1rem;
         }
-        
+
         .menu-wrap .menu > div > div > ul > li > a {
           color: inherit;
           text-decoration: none;
@@ -273,8 +274,8 @@ body{
         .hamburger{
           border-radius: 200px;
         }
-        
-        
+
+
 #fine{
   text-align: center;
   position: relative;
@@ -282,7 +283,7 @@ body{
   height: auto;
   top: 30px;
   left: 0px;
-  background-color: white;
+  background-color: #282828;
   padding: 25px;
   border-radius: 5px;
   -moz-border-radius: 10px;
@@ -338,11 +339,11 @@ ul li a:hover{
 .notification{
   width: 60px;
   height: 60px;
-  background: rgb(0, 76, 255);
+  background: rgb(240, 240, 240);
   border-radius: 50%;
   position: absolute;
   top: 1px;
-  
+
   right: 1px;
 }
 .num{
@@ -449,7 +450,7 @@ ul li a:hover{
   top: 50%;
   bottom: 50%;
   left: 8px;
-  
+
   font-size: 22px;
   line-height: 5px;
   transition: .6s;
@@ -491,8 +492,3 @@ ul li a:hover{
   background-color: #7232bd;
 
 }
-
-
-
-
-
