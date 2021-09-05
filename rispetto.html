@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b15fc9ba2.js" crossorigin="anonymous"></script>
     <title>Regole gruppo YoungTech</title>
 </head>
 <body>
@@ -62,7 +63,6 @@
       <div>
         <div>
           <ul>
-            <button id=darkmode>Light Mode</button>
             <li><a href="index.html">Home</a></li>
             <li><a href="spam.html">Spam</a></li>
             <li><a href="pirateria.html">Pirateria</a></li>
@@ -78,42 +78,24 @@
   </div>
 </body>
 
+
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="b"></div>
+            </label>
+
 <script>
+  const chk = document.getElementById('chk');
 
-  /*Il css controlla innanzitutto il tema di sistema per stabilire se essere dark o light
-    se devi cambiare qualcosa vai anche su style.css e controlla "@media (prefers-color-scheme: light)"*/
-  const darkModeButton = document.getElementById("darkmode");
-  const h1 = document.querySelectorAll("h1");
-  darkModeButton.onclick = function()
-  {
-    if (document.body.style.color == "black")
-    {
-      document.getElementById("testa").style.backgroundColor = "#282828";
-      document.getElementById("principale").style.backgroundColor = "#282828";
-      document.getElementById("fine").style.backgroundColor = "#282828";
-      document.body.style.color = "white";
-      for (var i=0; i<h1.length; i++)
-      {
-        h1[i].style.color = "white";
-      }
-      //h1.style.color = "white";
-    }
-    else
-    {
-      document.getElementById("testa").style.backgroundColor = "white";
-      document.getElementById("principale").style.backgroundColor = "white";
-      document.getElementById("fine").style.backgroundColor = "white";
-      document.body.style.color = "black";
-      for (var i=0; i<h1.length; i++)
-      {
-        h1[i].style.color = "black";
-      }
-
-    }
-
-
-  }
-
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('chiara');
+  document.body.classList.toggle('chiara2');
+  document.body.classList.toggle('chiara3');
+  document.body.classList.toggle('accauno');
+});
 
 </script>
+
 </html>
