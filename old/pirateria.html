@@ -30,20 +30,29 @@
     </div>
 
     <div id="principale">
-      <h1>punizioni</h1>
+      <h1>Pirateria, virus e azioni pericolose</h1>
       <br>
 
-    <p>in questa sezione del sito veranno <strong>spiegate</strong> le punizioni per l'infrangimento delle regole:
-      <ul> <br>
-      <li style="margin-left: 50px;"> <strong>cancellazione</strong>: con la cancellazzione il messaggio incrimnato verrà cancellato
-      <li style="margin-left: 50px;"> <strong>avvertimento</strong>: con un avvertimento l'utente riceverà un messaggio da parte dello staff in cui verrà rimproverato per le sue azioni</li>
-      <li style="margin-left: 50px;"> <strong>warn</strong>: con il warn si riceve un ammonizzione, una volta raggiunti i quattro warn l'utente verrà bannato</li>
-      <li style="margin-left: 50px;"> <strong>mute</strong>: con il mute non sarà possibile scrivere, ma si potranno leggere i messaggi per un tempo decretato dai mod</li>
-      <li style="margin-left: 50px;"> <strong>ban</strong>: con il ban non sarà più possibile accedere alla chat del gruppo per un tempo determinato dai mod o per un tempo infinito</li>
-    </p>
-
+        virus e azioni pericolose
+        
+      <p>È consentito discutere di <strong> pirateria, virus e azioni pericolose</strong> per i propri dispositivi solo a <strong>scopo informativo</strong>;
+        le discussioni vanno portate avanti in <strong>modo civile</strong> e <strong>rispettando sempre gli altri</strong> (vedi sezione rispetto),
+        parlando in <strong>modo chiaro</strong> e <strong>specificando quanto sia pericoloso il virus o l'azione pericolosa</strong>.</p>
       <br>
 
+        <!-- pirateria -->
+      <p>Nelle discussioni riguardanti la <strong>pirateria</strong>, è severamente vietato dire esplicitamente <strong>le fonti da cui possono essere scaricati</strong> i software piratati. <br>
+         Inoltre, è vietato <strong>chiedere</strong> esplicitamente <strong>come piratare un software</strong> il nome di <strong>siti illegali</strong>.</p>
+      <br>
+
+         <!-- punizioni -->
+      <p>Le punizioni per l'<strong>infrangimento</strong> di queste regole sono: <br>
+        <ul>
+          <li style="margin-left: 50px;"> per una <strong>crack esplicita</strong> e <strong>l'intenzione di mandarla nel gruppo</strong> si ottiene: 1 warn + 24hr di mute e alla seconda volta si procederà con il ban <br> </li>
+          <li style="margin-left: 50px;"> se viene inviata una <strong>foto per errore</strong> in cui si vede una crack la punizione sarà: la prima volta verrai punito con la cancellazzione e un avvertimento, la seconda volta con con un warn e la terza volta con il ban <br> </li>
+          <li style="margin-left: 50px;"> se si vede una <strong>crack sullo sfondo</strong> (scheda aperta/ icona sul desktop/ icona in una cartella) verrai punito con: la cancellazzione la prima volta, la seconda volta con con la cancellazione e un avvertimento, la terza volta con un warn <br> </li>
+        </ul>
+      <br>
     </div>
 
 <div id="fine">
@@ -51,10 +60,8 @@
   <p>© 2021 All Rights Reserved
     by YoungTechFanGroupOfficial
   </p>
-
-<div  id="mail">
   <p>Contact: <a href="mailto:YoungTechFans@protonmail.com">YoungTechFans@protonmail.com</a></p>
-</div>
+
   <p>Creato dallo staff</p>
 </div>
 
@@ -66,7 +73,6 @@
       <div>
         <div>
           <ul>
-
             <li><a href="index.html">Home</a></li>
             <li><a href="spam.html">Spam</a></li>
             <li><a href="pirateria.html">Pirateria</a></li>
@@ -75,13 +81,12 @@
             <li><a href="admin.html">Admin</a></li>
             <li><a href="voip.html">Voip</a></li>
             <li><a href="punizioni.html">Punizioni</a></li>
-
           </ul>
         </div>
       </div>
     </div>
   </div>
-
+</body>
 
             <input type="checkbox" class="checkbox" id="chk" />
             <label class="label" for="chk">
@@ -90,13 +95,16 @@
               <div class="b"></div>
             </label>
 
-<script src="theme.js"></script>
+<script>
+  const chk = document.getElementById('chk');
 
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('chiara');
+  document.body.classList.toggle('chiara2');
+  document.body.classList.toggle('chiara3');
+  document.body.classList.toggle('accauno');
+});
 
-</body>
-
-
-
-
+</script>
 
 </html>

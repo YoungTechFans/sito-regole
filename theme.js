@@ -1,4 +1,5 @@
   var darkModeVar = localStorage['YoungTechFanGroupSiteDarkMode'];
+  const chk = document.getElementById('chk');
             
   if (darkModeVar == undefined)
   {
@@ -17,6 +18,8 @@
     document.body.classList.toggle('chiara2', true);
     document.body.classList.toggle('chiara3', true);
     document.body.classList.toggle('accauno', true);
+    chk.checked = true;
+
   }
   else if (darkModeVar == "dark")
   {
@@ -24,12 +27,14 @@
     document.body.classList.toggle('chiara2', false);
     document.body.classList.toggle('chiara3', false);
     document.body.classList.toggle('accauno', false);
+    chk.checked = false;
+
   }
 
   console.log(darkModeVar);
             
             
-  const chk = document.getElementById('chk');
+  
 
   chk.addEventListener('change', () => {
     //console.log(chk.checked);

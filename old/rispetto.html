@@ -30,20 +30,19 @@
     </div>
 
     <div id="principale">
-      <h1>punizioni</h1>
+      <h1>Rispetto verso gli utenti</h1>
       <br>
-
-    <p>in questa sezione del sito veranno <strong>spiegate</strong> le punizioni per l'infrangimento delle regole:
-      <ul> <br>
-      <li style="margin-left: 50px;"> <strong>cancellazione</strong>: con la cancellazzione il messaggio incrimnato verrà cancellato
-      <li style="margin-left: 50px;"> <strong>avvertimento</strong>: con un avvertimento l'utente riceverà un messaggio da parte dello staff in cui verrà rimproverato per le sue azioni</li>
-      <li style="margin-left: 50px;"> <strong>warn</strong>: con il warn si riceve un ammonizzione, una volta raggiunti i quattro warn l'utente verrà bannato</li>
-      <li style="margin-left: 50px;"> <strong>mute</strong>: con il mute non sarà possibile scrivere, ma si potranno leggere i messaggi per un tempo decretato dai mod</li>
-      <li style="margin-left: 50px;"> <strong>ban</strong>: con il ban non sarà più possibile accedere alla chat del gruppo per un tempo determinato dai mod o per un tempo infinito</li>
-    </p>
-
-      <br>
-
+      <p>Non sono ammesse <strong>provocazioni</strong> agli utenti o <strong>insulti</strong>.
+        Nel caso un utente vi <strong>insultasse o provocasse in chat privata</strong>, fatelo presente ad un admin in chat privata <strong>fornendo screenshot o prove</strong>,
+        la lista degli admin è consultabile in qualsiasi momento con il comando <i>/staff</i>. <br>
+        È consentito andare OffTopic, ma gli admin si riservano il diritto di <strong>chiudere il discorso</strong>, e se necessario <strong>eliminare i messaggi</strong>, in qualsiasi momento.
+        È inoltre consigliato di utilizzare le funzioni <i>"modifica"</i> <i>"elimina"</i> e <i>"rispondi"</i> per <strong>comunicare in modo chiaro</strong>.</p>
+        <br>
+        <ul>
+          Le punizioni per <strong>l'infrangimento</strong> di queste regole sono:
+          <li style="margin-left: 50px;">Per un insulto <strong>diretto a offendere</strong>: <br> La prima volta l'utente riceverà un <b>mute di un 1hr e un warn</b>, la seconda volta riceverà il <b>ban</b>.</li> <br>
+          <li style="margin-left: 50px;">Per gli insulti <strong>pesanti</strong> verso un utente <strong>non diretti ad offendere</strong>: <br> La prima volta l'utente riceverà un <b>avvertimento e la cancellazzione del messaggio</b>, la seconda volta riceverà un <b>warn</b>, la terza volta un <b>warn e un mute di 12hr</b>  e la quarta volta l'utente <b>verrà bannato</b> .</li>
+        <br>
     </div>
 
 <div id="fine">
@@ -51,10 +50,8 @@
   <p>© 2021 All Rights Reserved
     by YoungTechFanGroupOfficial
   </p>
-
-<div  id="mail">
   <p>Contact: <a href="mailto:YoungTechFans@protonmail.com">YoungTechFans@protonmail.com</a></p>
-</div>
+
   <p>Creato dallo staff</p>
 </div>
 
@@ -66,7 +63,6 @@
       <div>
         <div>
           <ul>
-
             <li><a href="index.html">Home</a></li>
             <li><a href="spam.html">Spam</a></li>
             <li><a href="pirateria.html">Pirateria</a></li>
@@ -75,12 +71,12 @@
             <li><a href="admin.html">Admin</a></li>
             <li><a href="voip.html">Voip</a></li>
             <li><a href="punizioni.html">Punizioni</a></li>
-
           </ul>
         </div>
       </div>
     </div>
   </div>
+</body>
 
 
             <input type="checkbox" class="checkbox" id="chk" />
@@ -90,13 +86,16 @@
               <div class="b"></div>
             </label>
 
-<script src="theme.js"></script>
+<script>
+  const chk = document.getElementById('chk');
 
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('chiara');
+  document.body.classList.toggle('chiara2');
+  document.body.classList.toggle('chiara3');
+  document.body.classList.toggle('accauno');
+});
 
-</body>
-
-
-
-
+</script>
 
 </html>
