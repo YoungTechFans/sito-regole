@@ -33,7 +33,7 @@
 
   console.log(darkModeVar);
             
-            
+        
   
 
   chk.addEventListener('change', () => {
@@ -46,11 +46,13 @@
     {
       localStorage['YoungTechFanGroupSiteDarkMode'] = 'dark';
     }
+
+
     darkModeVar = localStorage['YoungTechFanGroupSiteDarkMode'];
     console.log(darkModeVar);
    
 
-	document.body.classList.toggle('chiara');
+	  document.body.classList.toggle('chiara');
     document.body.classList.toggle('chiara2');
     document.body.classList.toggle('chiara3');
     document.body.classList.toggle('accauno');

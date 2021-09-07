@@ -1,7 +1,7 @@
   body{
               background-color: rgb(30, 144, 255);
               margin: 10px;
-              overflow: hidden;
+              overflow: auto;
           }
           #immagine1{
               position: absolute;
