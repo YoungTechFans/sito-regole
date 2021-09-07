@@ -564,3 +564,8 @@ ul li a:hover{
 #mail a{
   text-decoration: none;
 }
+
+#mail a:link
+{
+  color: #007eef;
+}
