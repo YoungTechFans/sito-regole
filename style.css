@@ -1,6 +1,7 @@
   body{
               background-color: rgb(30, 144, 255);
               margin: 10px;
+              overflow: auto;
           }
           #immagine1{
               position: absolute;
@@ -13,7 +14,7 @@
           #immagine2{
               position: absolute;
               top: 2px;
-              right: 20px;
+              right: 40px;
               width: 160px;
               height: 160px;
 
@@ -156,7 +157,7 @@
           width: 55px;
           height: 55px;
           padding: 1rem;
-          background:  rgb(30, 144, 255);
+          background: rgb(30, 144, 255);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -184,7 +185,7 @@
           top: -10px;
           width: 100%;
           height: 2px;
-          background: inherit;
+          background: white;
         }
 
 
@@ -262,11 +263,11 @@
           list-style: none;
           color: #fff;
           font-size: 1.5rem;
-          padding: 1rem;
+          padding: 0.8rem;
         }
 
         .menu-wrap .menu > div > div > ul > li > a {
-          color: inherit;
+          color: white;
           text-decoration: none;
           transition: color 0.4s ease;
         }
@@ -291,14 +292,15 @@
 }
 
 ul li a{
+
   border: 0;
   background: none;
   display: block;
-  margin: 2px auto;
+  margin: 1px auto;
   text-align: center;
   border: 2px solid #2498db;
-  padding: 14px 10px;
-  width: 200px;
+  padding: 6px 6px;
+  width: 150px;
   outline: none;
   color: white;
   border-radius: 24px;
@@ -339,17 +341,16 @@ ul li a:hover{
 .notification{
   width: 60px;
   height: 60px;
-  background: rgb(240, 240, 240);
+  background: rgb(30, 144, 255);
   border-radius: 50%;
   position: absolute;
-  top: 1px;
-
-  right: 1px;
+  top: 16px;
+  right: 16px;
 }
 .num{
   position: absolute;
-  top: -2px;
-  right: -2px;
+  top: 2px;
+  right: 2px;
   background: rgb(230, 85, 85);
   width: 20px;
   height: 20px;
@@ -493,37 +494,78 @@ ul li a:hover{
 
 }
 
-a:link {
-  color: #007eef;
-  background-color: transparent;
-  
+
+
+
+  .chiara #testa  {
+	background: white;
+  color: #000;
+}
+.chiara2 #principale  {
+	background: white;
+  color: #000;
+}
+.chiara3 #fine  {
+	background: white;
+  color: #000;
+}
+.accauno h1  {
+  color: #000;
 }
 
 
-/* controlla il tema di sistema */
-@media (prefers-color-scheme: light) {
-  #testa
-  {
-    background-color: white;
-  }
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
 
-  #principale
-  {
-    background-color: white;
-  }
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: absolute;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+  right: 24px;
+  top: 20px;
 
-  #fine
-  {
-    background-color: white;
-  }
+}
 
-  body
-  {
-    color: black;
-  }
+.label .b {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
 
-  h1
-  {
-    color: black;
-  }
+.checkbox:checked + .label .b {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
+#mail a{
+  text-decoration: none;
+}
+
+#mail a:link
+{
+  color: #007eef;
 }

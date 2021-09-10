@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b15fc9ba2.js" crossorigin="anonymous"></script>
+    <title>Regole gruppo YoungTech</title>
+</head>
+<body>
+    <div id="testa">
+        <div id="immagine1">
+            <a href="https://t.me/YoungTechFanGroupOfficial" target="_blank">
+                <img id="telegramlogo" height="100" width="100" src="logo_telegram.jpg" alt="canale Telegram">
+            </a>
+        </div>
+        <div id="immagine2">
+            <a href="https://www.youtube.com/channel/UCVrqEID_IoP-dIZGabAJDvQ?view_as=subscriber" target="_blank">
+            <img height="100" width="100" src="logo_youtube.png" alt="Canale Youtube" >
+            </a>
+        </div>
+        <h1>
+            <bold>
+                Regole del YoungTech Fan Group
+            </bold>
+        </h1>
+    </div>
+
+    <div id="principale">
+      <h1>Spam</h1>
+      <br>
+      <p>Per spam si intendono quei messaggi <strong>auto promozionali non desiderati</strong> o <strong>iniziative ai fini di lucro</strong>.
+        I contenuti auto promozionali sono ammessi solo se <strong>richiesti dagli admin o dagli utenti stessi</strong>. <br>
+        Prima di inviare un proprio contenuto nel gruppo principale, è necessario <strong>richiedere il consenso ad un membro dello staff con il comando @admin</strong> <br>
+        Nel caso un utente <strong>infastidisse</strong> gli altri membri del gruppo in chat privata, specialmente con i suoi contenuti, <strong>verrà punito</strong></p>
+        <br>
+        Le punizioni per <strong>l'infrangimento</strong> di queste regole sono: <br>
+        <ul>
+          <li style="margin-left: 50px;"> per l'invio di <strong>link social non richiesto</strong> la punizione è: la prima e la seconda volta l'untente riceverà un warn, la terza volta riceverà due warn </li>
+          <li style="margin-left: 50px;"> per l'invio di <strong>siti o canali telegram </strong> o <strong>vietati ai minori di 18 anni</strong> la punizione sarà il ban</li>
+        <br>
+    </div>
+
+<div id="fine">
+  <br>
+  <p>© 2021 All Rights Reserved
+    by YoungTechFanGroupOfficial
+  </p>
+  <p>Contact: <a href="mailto:YoungTechFans@protonmail.com">YoungTechFans@protonmail.com</a></p>
+
+  <p>Creato dallo staff</p>
+</div>
+
+  <div class="menu-wrap">
+    <!--per toggler si intende che l'oggetto (in questo caso il pulsante per la navbar) passa da acceso a spento-->
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+      <div>
+        <div>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="spam.html">Spam</a></li>
+            <li><a href="pirateria.html">Pirateria</a></li>
+            <li><a href="rispetto.html">Rispetto</a></li>
+            <li><a href="assistenza.html">Assistenza</a></li>
+            <li><a href="admin.html">Admin</a></li>
+            <li><a href="voip.html">Voip</a></li>
+            <li><a href="punizioni.html">Punizioni</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+<script>
+
+  /*Il css controlla innanzitutto il tema di sistema per stabilire se essere dark o light
+    se devi cambiare qualcosa vai anche su style.css e controlla "@media (prefers-color-scheme: light)"*/
+  const darkModeButton = document.getElementById("darkmode");
+  const h1 = document.querySelectorAll("h1");
+  darkModeButton.onclick = function()
+  {
+    if (document.body.style.color == "black")
+    {
+      document.getElementById("testa").style.backgroundColor = "#282828";
+      document.getElementById("principale").style.backgroundColor = "#282828";
+      document.getElementById("fine").style.backgroundColor = "#282828";
+      document.body.style.color = "white";
+      for (var i=0; i<h1.length; i++)
+      {
+        h1[i].style.color = "white";
+      }
+      //h1.style.color = "white";
+    }
+    else
+    {
+      document.getElementById("testa").style.backgroundColor = "white";
+      document.getElementById("principale").style.backgroundColor = "white";
+      document.getElementById("fine").style.backgroundColor = "white";
+      document.body.style.color = "black";
+      for (var i=0; i<h1.length; i++)
+      {
+        h1[i].style.color = "black";
+      }
+
+    }
+
+
+  }
+
+
+</script>
+</html>
