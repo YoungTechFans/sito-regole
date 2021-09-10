@@ -1,4 +1,4 @@
-  var darkModeVar = localStorage['YoungTechFanGroupSiteDarkMode'];
+  let darkModeVar = localStorage['YoungTechFanGroupSiteDarkMode'];
   const chk = document.getElementById('chk');
             
   if (darkModeVar == undefined)
@@ -31,7 +31,7 @@
 
   }
 
-  console.log(darkModeVar);
+
             
         
   
@@ -49,7 +49,7 @@
 
 
     darkModeVar = localStorage['YoungTechFanGroupSiteDarkMode'];
-    console.log(darkModeVar);
+
    
 
 	  document.body.classList.toggle('chiara');
