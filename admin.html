@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/8b15fc9ba2.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8b15fc9ba2.js" crossorigin="anonymous"></script>
     <title>Regole gruppo YoungTech</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
         </div>
         <div id="immagine2">
             <a href="https://www.youtube.com/channel/UCVrqEID_IoP-dIZGabAJDvQ?view_as=subscriber" target="_blank">
-              <img height="100" width="100" src="logo_youtube.png" alt="Canale Youtube" >
+            <img height="100" width="100" src="logo_youtube.png" alt="Canale Youtube" >
             </a>
         </div>
         <h1>
@@ -28,6 +28,13 @@
             </bold>
         </h1>
     </div>
+
+    <input type="checkbox" class="checkbox" id="chk" />
+    <label class="label" for="chk">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="b"></div>
+    </label>
 
     <div id="principale">
       <h1>Comando @admin e tag</h1>
@@ -44,8 +51,10 @@
   <p>© 2021 All Rights Reserved
     by YoungTechFanGroupOfficial
   </p>
-  <p>Contact: <a href="mailto:YoungTechFans@protonmail.com">YoungTechFans@protonmail.com</a></p>
 
+<div  id="mail">
+  <p>Contact: <a href="mailto:YoungTechFans@protonmail.com">YoungTechFans@protonmail.com</a></p>
+</div>
   <p>Creato dallo staff</p>
 </div>
 
@@ -57,6 +66,7 @@
       <div>
         <div>
           <ul>
+
             <li><a href="index.html">Home</a></li>
             <li><a href="spam.html">Spam</a></li>
             <li><a href="pirateria.html">Pirateria</a></li>
@@ -65,30 +75,23 @@
             <li><a href="admin.html">Admin</a></li>
             <li><a href="voip.html">Voip</a></li>
             <li><a href="punizioni.html">Punizioni</a></li>
+
           </ul>
         </div>
       </div>
     </div>
   </div>
+
+
+           
+
+<script src="theme.js"></script>
+
+
 </body>
 
-<input type="checkbox" class="checkbox" id="chk" />
-<label class="label" for="chk">
-  <i class="fas fa-moon"></i>
-  <i class="fas fa-sun"></i>
-  <div class="b"></div>
-</label>
 
-<script>
-const chk = document.getElementById('chk');
 
-chk.addEventListener('change', () => {
-document.body.classList.toggle('chiara');
-document.body.classList.toggle('chiara2');
-document.body.classList.toggle('chiara3');
-document.body.classList.toggle('accauno');
-});
 
-</script>
 
 </html>

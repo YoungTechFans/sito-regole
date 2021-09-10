@@ -1,7 +1,7 @@
   body{
               background-color: rgb(30, 144, 255);
               margin: 10px;
-              overflow: hidden;
+              overflow: auto;
           }
           #immagine1{
               position: absolute;
@@ -263,7 +263,7 @@
           list-style: none;
           color: #fff;
           font-size: 1.5rem;
-          padding: 1rem;
+          padding: 0.8rem;
         }
 
         .menu-wrap .menu > div > div > ul > li > a {
@@ -563,4 +563,9 @@ ul li a:hover{
 
 #mail a{
   text-decoration: none;
+}
+
+#mail a:link
+{
+  color: #007eef;
 }

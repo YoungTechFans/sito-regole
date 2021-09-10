@@ -29,6 +29,13 @@
         </h1>
     </div>
 
+    <input type="checkbox" class="checkbox" id="chk" />
+    <label class="label" for="chk">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="b"></div>
+    </label>
+
     <div id="principale">
       <h1>Spam</h1>
       <br>
@@ -49,8 +56,10 @@
   <p>© 2021 All Rights Reserved
     by YoungTechFanGroupOfficial
   </p>
-  <p>Contact: <a href="mailto:YoungTechFans@protonmail.com">YoungTechFans@protonmail.com</a></p>
 
+<div  id="mail">
+  <p>Contact: <a href="mailto:YoungTechFans@protonmail.com">YoungTechFans@protonmail.com</a></p>
+</div>
   <p>Creato dallo staff</p>
 </div>
 
@@ -62,6 +71,7 @@
       <div>
         <div>
           <ul>
+
             <li><a href="index.html">Home</a></li>
             <li><a href="spam.html">Spam</a></li>
             <li><a href="pirateria.html">Pirateria</a></li>
@@ -70,49 +80,23 @@
             <li><a href="admin.html">Admin</a></li>
             <li><a href="voip.html">Voip</a></li>
             <li><a href="punizioni.html">Punizioni</a></li>
+
           </ul>
         </div>
       </div>
     </div>
   </div>
+
+
+          
+
+<script src="theme.js"></script>
+
+
 </body>
 
-<script>
-
-  /*Il css controlla innanzitutto il tema di sistema per stabilire se essere dark o light
-    se devi cambiare qualcosa vai anche su style.css e controlla "@media (prefers-color-scheme: light)"*/
-  const darkModeButton = document.getElementById("darkmode");
-  const h1 = document.querySelectorAll("h1");
-  darkModeButton.onclick = function()
-  {
-    if (document.body.style.color == "black")
-    {
-      document.getElementById("testa").style.backgroundColor = "#282828";
-      document.getElementById("principale").style.backgroundColor = "#282828";
-      document.getElementById("fine").style.backgroundColor = "#282828";
-      document.body.style.color = "white";
-      for (var i=0; i<h1.length; i++)
-      {
-        h1[i].style.color = "white";
-      }
-      //h1.style.color = "white";
-    }
-    else
-    {
-      document.getElementById("testa").style.backgroundColor = "white";
-      document.getElementById("principale").style.backgroundColor = "white";
-      document.getElementById("fine").style.backgroundColor = "white";
-      document.body.style.color = "black";
-      for (var i=0; i<h1.length; i++)
-      {
-        h1[i].style.color = "black";
-      }
-
-    }
 
 
-  }
 
 
-</script>
 </html>

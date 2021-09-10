@@ -28,7 +28,12 @@
             </bold>
         </h1>
     </div>
-
+    <input type="checkbox" class="checkbox" id="chk" />
+    <label class="label" for="chk">
+      <i class="fas fa-moon"></i>
+      <i class="fas fa-sun"></i>
+      <div class="b"></div>
+    </label>
     <div id="principale">
       <h1>Introduzione</h1>
       <br>
@@ -78,24 +83,9 @@
   </div>
 
 
-            <input type="checkbox" class="checkbox" id="chk" />
-            <label class="label" for="chk">
-              <i class="fas fa-moon"></i>
-              <i class="fas fa-sun"></i>
-              <div class="b"></div>
-            </label>
+          
 
-<script>
-  const chk = document.getElementById('chk');
-
-chk.addEventListener('change', () => {
-	document.body.classList.toggle('chiara');
-  document.body.classList.toggle('chiara2');
-  document.body.classList.toggle('chiara3');
-  document.body.classList.toggle('accauno');
-});
-
-</script>
+<script src="theme.js"></script>
 
 
 </body>

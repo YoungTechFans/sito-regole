@@ -29,37 +29,19 @@
         </h1>
     </div>
 
-    <input type="checkbox" class="checkbox" id="chk" />
-    <label class="label" for="chk">
-      <i class="fas fa-moon"></i>
-      <i class="fas fa-sun"></i>
-      <div class="b"></div>
-    </label>
-
     <div id="principale">
-      <h1>Pirateria, virus e azioni pericolose</h1>
+      <h1>Spam</h1>
       <br>
-
-        virus e azioni pericolose
-        
-      <p>È consentito discutere di <strong> pirateria, virus e azioni pericolose</strong> per i propri dispositivi solo a <strong>scopo informativo</strong>;
-        le discussioni vanno portate avanti in <strong>modo civile</strong> e <strong>rispettando sempre gli altri</strong> (vedi sezione rispetto),
-        parlando in <strong>modo chiaro</strong> e <strong>specificando quanto sia pericoloso il virus o l'azione pericolosa</strong>.</p>
-      <br>
-
-        <!-- pirateria -->
-      <p>Nelle discussioni riguardanti la <strong>pirateria</strong>, è severamente vietato dire esplicitamente <strong>le fonti da cui possono essere scaricati</strong> i software piratati. <br>
-         Inoltre, è vietato <strong>chiedere</strong> esplicitamente <strong>come piratare un software</strong> il nome di <strong>siti illegali</strong>.</p>
-      <br>
-
-         <!-- punizioni -->
-      <p>Le punizioni per l'<strong>infrangimento</strong> di queste regole sono: <br>
+      <p>Per spam si intendono quei messaggi <strong>auto promozionali non desiderati</strong> o <strong>iniziative ai fini di lucro</strong>.
+        I contenuti auto promozionali sono ammessi solo se <strong>richiesti dagli admin o dagli utenti stessi</strong>. <br>
+        Prima di inviare un proprio contenuto nel gruppo principale, è necessario <strong>richiedere il consenso ad un membro dello staff con il comando @admin</strong> <br>
+        Nel caso un utente <strong>infastidisse</strong> gli altri membri del gruppo in chat privata, specialmente con i suoi contenuti, <strong>verrà punito</strong></p>
+        <br>
+        Le punizioni per <strong>l'infrangimento</strong> di queste regole sono: <br>
         <ul>
-          <li style="margin-left: 50px;"> per una <strong>crack esplicita</strong> e <strong>l'intenzione di mandarla nel gruppo</strong> si ottiene: 1 warn + 24hr di mute e alla seconda volta si procederà con il ban <br> </li>
-          <li style="margin-left: 50px;"> se viene inviata una <strong>foto per errore</strong> in cui si vede una crack la punizione sarà: la prima volta verrai punito con la cancellazzione e un avvertimento, la seconda volta con con un warn e la terza volta con il ban <br> </li>
-          <li style="margin-left: 50px;"> se si vede una <strong>crack sullo sfondo</strong> (scheda aperta/ icona sul desktop/ icona in una cartella) verrai punito con: la cancellazzione la prima volta, la seconda volta con con la cancellazione e un avvertimento, la terza volta con un warn <br> </li>
-        </ul>
-      <br>
+          <li style="margin-left: 50px;"> per l'invio di <strong>link social non richiesto</strong> la punizione è: la prima e la seconda volta l'untente riceverà un warn, la terza volta riceverà due warn </li>
+          <li style="margin-left: 50px;"> per l'invio di <strong>siti o canali telegram </strong> o <strong>vietati ai minori di 18 anni</strong> la punizione sarà il ban</li>
+        <br>
     </div>
 
 <div id="fine">
@@ -67,10 +49,8 @@
   <p>© 2021 All Rights Reserved
     by YoungTechFanGroupOfficial
   </p>
-
-<div  id="mail">
   <p>Contact: <a href="mailto:YoungTechFans@protonmail.com">YoungTechFans@protonmail.com</a></p>
-</div>
+
   <p>Creato dallo staff</p>
 </div>
 
@@ -82,7 +62,6 @@
       <div>
         <div>
           <ul>
-
             <li><a href="index.html">Home</a></li>
             <li><a href="spam.html">Spam</a></li>
             <li><a href="pirateria.html">Pirateria</a></li>
@@ -91,23 +70,49 @@
             <li><a href="admin.html">Admin</a></li>
             <li><a href="voip.html">Voip</a></li>
             <li><a href="punizioni.html">Punizioni</a></li>
-
           </ul>
         </div>
       </div>
     </div>
   </div>
-
-
-           
-
-<script src="theme.js"></script>
-
-
 </body>
 
+<script>
+
+  /*Il css controlla innanzitutto il tema di sistema per stabilire se essere dark o light
+    se devi cambiare qualcosa vai anche su style.css e controlla "@media (prefers-color-scheme: light)"*/
+  const darkModeButton = document.getElementById("darkmode");
+  const h1 = document.querySelectorAll("h1");
+  darkModeButton.onclick = function()
+  {
+    if (document.body.style.color == "black")
+    {
+      document.getElementById("testa").style.backgroundColor = "#282828";
+      document.getElementById("principale").style.backgroundColor = "#282828";
+      document.getElementById("fine").style.backgroundColor = "#282828";
+      document.body.style.color = "white";
+      for (var i=0; i<h1.length; i++)
+      {
+        h1[i].style.color = "white";
+      }
+      //h1.style.color = "white";
+    }
+    else
+    {
+      document.getElementById("testa").style.backgroundColor = "white";
+      document.getElementById("principale").style.backgroundColor = "white";
+      document.getElementById("fine").style.backgroundColor = "white";
+      document.body.style.color = "black";
+      for (var i=0; i<h1.length; i++)
+      {
+        h1[i].style.color = "black";
+      }
+
+    }
 
 
+  }
 
 
+</script>
 </html>

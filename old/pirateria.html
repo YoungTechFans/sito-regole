@@ -29,13 +29,6 @@
         </h1>
     </div>
 
-    <input type="checkbox" class="checkbox" id="chk" />
-    <label class="label" for="chk">
-      <i class="fas fa-moon"></i>
-      <i class="fas fa-sun"></i>
-      <div class="b"></div>
-    </label>
-
     <div id="principale">
       <h1>Pirateria, virus e azioni pericolose</h1>
       <br>
@@ -67,10 +60,8 @@
   <p>© 2021 All Rights Reserved
     by YoungTechFanGroupOfficial
   </p>
-
-<div  id="mail">
   <p>Contact: <a href="mailto:YoungTechFans@protonmail.com">YoungTechFans@protonmail.com</a></p>
-</div>
+
   <p>Creato dallo staff</p>
 </div>
 
@@ -82,7 +73,6 @@
       <div>
         <div>
           <ul>
-
             <li><a href="index.html">Home</a></li>
             <li><a href="spam.html">Spam</a></li>
             <li><a href="pirateria.html">Pirateria</a></li>
@@ -91,23 +81,30 @@
             <li><a href="admin.html">Admin</a></li>
             <li><a href="voip.html">Voip</a></li>
             <li><a href="punizioni.html">Punizioni</a></li>
-
           </ul>
         </div>
       </div>
     </div>
   </div>
-
-
-           
-
-<script src="theme.js"></script>
-
-
 </body>
 
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="b"></div>
+            </label>
 
+<script>
+  const chk = document.getElementById('chk');
 
+chk.addEventListener('change', () => {
+	document.body.classList.toggle('chiara');
+  document.body.classList.toggle('chiara2');
+  document.body.classList.toggle('chiara3');
+  document.body.classList.toggle('accauno');
+});
 
+</script>
 
 </html>
