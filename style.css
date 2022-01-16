@@ -321,11 +321,6 @@ ul li a:hover{
   }
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .notification{
   display: flex;
   justify-content: center;
