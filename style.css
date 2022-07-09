@@ -1,92 +1,107 @@
-  body{
-              background-color: rgb(30, 144, 255);
-              margin: 10px;
-              overflow: auto;
-          }
-          #immagine1{
-              position: absolute;
-              top: 2px;
-              left: 40px;
-              width: 160px;
-              height: 160px;
+body{
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+  margin: 10px;
+}
 
-          }
-          #immagine2{
-              position: absolute;
-              top: 2px;
-              right: 40px;
-              width: 160px;
-              height: 160px;
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
-          }
-          #principale{
-              top: 0.5cm;
-              text-align: justify;
-              position: relative;
-              margin: 0 auto;
-              width: 97,1%;
-              height: auto;
-              padding: 20px;
-              background-color: #282828;
-              border-radius: 20px;
-              -moz-border-radius: 10px;
-              -webkit-border-radius: 10px;
-          }
-          #testa{
-              text-align: center;
-              position: relative;
-              width: auto;
-              height: auto;
-              top: 0px;
-              left: 0px;
-              background-color: #282828;
-              padding: 30px;
-              border-radius: 5px;
-              -moz-border-radius: 10px;
-              -webkit-border-radius: 10px;
-          }
-          h1{
-              font-size: auto;
-              font-family: 'Open Sans', sans-serif;;
-              color: white;
-          }
 
-          #telegramlogo
-          {
-              border-radius: 200px;
-          }
-          :root {
-            --primary-color: rgb(0, 76, 255);
-            --overlay-color: rgba(24, 39, 51 , 0.85);
-            --menu-speed: 0.75s;
-          }
+        #immagine1{
+            position: absolute;
+            top: 2px;
+            left: 40px;
+            width: 160px;
+            height: 160px;
 
-          * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-          }
+        }
+        #immagine2{
+            position: absolute;
+            top: 2px;
+            right: 20px;
+            width: 160px;
+            height: 160px;
 
-          body {
-          font-family: 'Roboto', sans-serif;
-          line-height: 1.4;
-          color: white;
+        }
+        #principale{
+            top: 0.5cm;
+            text-align: left;
+            position: relative;
+            margin: 0 auto;
+            width: 97,1%;
+            height: auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 20px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+        }
+        #testa{
+            text-align: center;
+            position: relative;
+            width: auto;
+            height: auto;
+            top: 0px;
+            left: 0px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 5px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+        }
+        h1{
+            font-size: auto;
+            font-family: 'Open Sans', sans-serif;;
+            color: black;
         }
 
+        #telegramlogo
+        {
+            border-radius: 200px;
+        }
+        :root {
+          --primary-color: rgb(0, 76, 255);
+          --overlay-color: rgba(24, 39, 51 , 0.85);
+          --menu-speed: 0.75s;
+        }
+        
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: 'Roboto', sans-serif;
+          line-height: 1.4;
+        }
+        
         .container {
           max-width: 960px;
           margin: auto;
           overflow: hidden;
           padding: 0 3rem;
         }
-
+        
         .showcase {
           background: var(--primary-color);
           color: #fff;
           height: 100vh;
           position: relative;
         }
-
+        
         .showcase:before {
           content: '';
           background: url('https://images.pexels.com/photos/533923/pexels-photo-533923.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') no-repeat center center/cover;
@@ -97,7 +112,7 @@
           height: 100%;
           z-index: -1;
         }
-
+        
         .showcase .showcase-inner {
           display: flex;
           flex-direction: column;
@@ -106,15 +121,15 @@
           text-align: center;
           height: 100%;
         }
-
+        
         .showcase h1 {
-        -size: 4rem;
+          font-size: 4rem;
         }
-
+        
         .showcase p {
           font-size: 1.3rem;
         }
-
+        
         .btn {
           display: inline-block;
           border: none;
@@ -125,19 +140,19 @@
           transition: opacity 1s ease-in-out;
           text-decoration: none;
         }
-
+        
         .btn:hover {
           opacity: 0.7;
         }
-
-
+        
+        
         .menu-wrap {
-          position: absolute;
-          top: 16px;
-          left: 16px;
+          position: fixed;
+          top: 0;
+          left: 0;
           z-index: 1;
         }
-
+        
         .menu-wrap .toggler {
           position: absolute;
           top: 0;
@@ -148,22 +163,22 @@
           height: 50px;
           opacity: 0;
         }
-
+        
         .menu-wrap .hamburger {
           position: absolute;
           top: 0;
           left: 0;
           z-index: 1;
-          width: 55px;
-          height: 55px;
+          width: 60px;
+          height: 60px;
           padding: 1rem;
-          background: rgb(30, 144, 255);
+          background: var(--primary-color);
           display: flex;
           align-items: center;
           justify-content: center;
         }
-
-
+        
+        
         .menu-wrap .hamburger > div {
           position: relative;
           flex: none;
@@ -175,8 +190,8 @@
           justify-content: center;
           transition: all 0.4s ease;
         }
-
-
+        
+        
         .menu-wrap .hamburger > div::before,
         .menu-wrap .hamburger > div::after {
           content: '';
@@ -185,46 +200,46 @@
           top: -10px;
           width: 100%;
           height: 2px;
-          background: white;
+          background: inherit;
         }
-
-
+        
+        
         .menu-wrap .hamburger > div::after {
           top: 10px;
         }
-
-
+        
+        
         .menu-wrap .toggler:checked + .hamburger > div {
           transform: rotate(135deg);
         }
-
-
+        
+        
         .menu-wrap .toggler:checked + .hamburger > div:before,
         .menu-wrap .toggler:checked + .hamburger > div:after {
           top: 0;
           transform: rotate(90deg);
         }
-
-
+        
+        
         .menu-wrap .toggler:checked:hover + .hamburger > div {
           transform: rotate(225deg);
         }
-
-
+        
+        
         .menu-wrap .toggler:checked ~ .menu {
           visibility: visible;
         }
-
+        
         .menu-wrap .toggler:checked ~ .menu > div {
           transform: scale(1);
           transition-duration: var(--menu-speed);
         }
-
+        
         .menu-wrap .toggler:checked ~ .menu > div > div {
           opacity: 1;
           transition:  opacity 0.4s ease 0.4s;
         }
-
+        
         .menu-wrap .menu {
           position: fixed;
           top: 0;
@@ -237,10 +252,10 @@
           align-items: center;
           justify-content: center;
         }
-
+        
         .menu-wrap .menu > div {
           background: var(--overlay-color);
-
+          
           width: 9000vw;
           height: 9000vw;
           display: flex;
@@ -250,7 +265,7 @@
           transform: scale(0);
           transition: all 0.4s ease;
         }
-
+        
         .menu-wrap .menu > div > div {
           text-align: center;
           max-width: 90vw;
@@ -258,16 +273,16 @@
           opacity: 0;
           transition: opacity 0.4s ease;
         }
-
+        
         .menu-wrap .menu > div > div > ul > li {
           list-style: none;
           color: #fff;
           font-size: 1.5rem;
-          padding: 0.8rem;
+          padding: 1rem;
         }
-
+        
         .menu-wrap .menu > div > div > ul > li > a {
-          color: white;
+          color: inherit;
           text-decoration: none;
           transition: color 0.4s ease;
         }
@@ -275,8 +290,8 @@
         .hamburger{
           border-radius: 200px;
         }
-
-
+        
+        
 #fine{
   text-align: center;
   position: relative;
@@ -284,7 +299,7 @@
   height: auto;
   top: 30px;
   left: 0px;
-  background-color: #282828;
+  background-color: white;
   padding: 25px;
   border-radius: 5px;
   -moz-border-radius: 10px;
@@ -292,15 +307,14 @@
 }
 
 ul li a{
-
   border: 0;
   background: none;
   display: block;
-  margin: 1px auto;
+  margin: 2px auto;
   text-align: center;
   border: 2px solid #2498db;
-  padding: 6px 6px;
-  width: 150px;
+  padding: 14px 10px;
+  width: 200px;
   outline: none;
   color: white;
   border-radius: 24px;
@@ -321,6 +335,11 @@ ul li a:hover{
   }
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .notification{
   display: flex;
   justify-content: center;
@@ -336,16 +355,16 @@ ul li a:hover{
 .notification{
   width: 60px;
   height: 60px;
-  background: rgb(30, 144, 255);
   border-radius: 50%;
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 1px;
+  
+  right: 1px;
 }
 .num{
   position: absolute;
-  top: 2px;
-  right: 2px;
+  top: -2px;
+  right: -2px;
   background: rgb(230, 85, 85);
   width: 20px;
   height: 20px;
@@ -374,7 +393,7 @@ ul li a:hover{
 .notification .box{
   width: 300px;
   border: rgb(0, 76, 255) 2px solid;
-  height: 160px;
+  height: 125px;
   background: #fff;
   position: absolute;
   border-radius: 20px;
@@ -393,7 +412,7 @@ ul li a:hover{
   color: white;
   box-shadow:  0 0 10px rgba(0, 0, 0, 0.432);
   width: 95%;
-  height: 30px;
+  height: 40px;
 }
 .notification_box{
   margin: 0.4em auto 0 auto;
@@ -422,145 +441,4 @@ ul li a:hover{
   text-align: center;
   justify-content: center;
   align-items: center;
-}
-
-.social-menu ul {
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  padding: 0;
-  margin: 0;
-  transform: translate(-50%, -50%);
-  display: flex;
-}
-
-.social-menu ul li {
-  list-style: none;
-  margin: 0 15px;
-}
-
-.social-menu ul li .fab {
-  position: absolute;
-  justify-content: center;
-  text-align: center;
-  top: 50%;
-  bottom: 50%;
-  left: 8px;
-
-  font-size: 22px;
-  line-height: 5px;
-  transition: .6s;
-  color: #000;
-}
-.social-menu ul li a:hover {
-  color: #fff;
-}
-
-.social-menu ul li a {
-  position: relative;
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: #fff;
-  text-align: center;
-  transition: .6s;
-  box-shadow: 0 5px 4px rgba(0,0,0,.5);
-
-
-}
-
-.social-menu ul li a:hover {
-  transform: translate(0, -10px);
-}
-
-.social-menu ul li:nth-child(1) a:hover {
-  background-color: #55acee;
-
-}
-
-.social-menu ul li:nth-child(2) a:hover {
-  background-color: #7289da;
-
-}
-
-.social-menu ul li:nth-child(3) a:hover {
-  background-color: #7232bd;
-
-}
-
-
-
-
-  .chiara #testa  {
-	background: white;
-  color: #000;
-}
-.chiara2 #principale  {
-	background: white;
-  color: #000;
-}
-.chiara3 #fine  {
-	background: white;
-  color: #000;
-}
-.accauno h1  {
-  color: #000;
-}
-
-
-.checkbox {
-	opacity: 0;
-	position: absolute;
-}
-
-.label {
-	background-color: #111;
-	border-radius: 50px;
-	cursor: pointer;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 5px;
-	position: absolute;
-	height: 26px;
-	width: 50px;
-	transform: scale(1.5);
-  right: 24px;
-  top: 20px;
-
-}
-
-.label .b {
-	background-color: #fff;
-	border-radius: 50%;
-	position: absolute;
-	top: 2px;
-	left: 2px;
-	height: 22px;
-	width: 22px;
-	transform: translateX(0px);
-	transition: transform 0.2s linear;
-}
-
-.checkbox:checked + .label .b {
-	transform: translateX(24px);
-}
-
-
-.fa-moon {
-	color: #f1c40f;
-}
-
-.fa-sun {
-	color: #f39c12;
-}
-
-#mail a{
-  text-decoration: none;
-}
-
-#mail a:link
-{
-  color: #007eef;
 }
