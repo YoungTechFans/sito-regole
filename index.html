@@ -4,99 +4,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="I code stuff">
-      <meta name="keywords" content="YoungTech, YoungTechFanGroupOfficial, YoungTechFanGroup, YoungTech Fan Group Official, YoungTech Telegram, Telegram YoungTech, youngtech">
-      <meta name="author" content="YoungTechFanGroupOfficial//Dardan Bytyqi & Siv Pigna">
-      <meta name="theme-color" content="#7289DA">
-      <meta property="og:description" content="Sito regolamento dei canali Telegram e Discord di YoungTech">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8b15fc9ba2.js" crossorigin="anonymous"></script>
-    <title>Regole gruppo YoungTech</title>
-    <link rel="shortcut icon" href="logo_telegram.ico"; />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto">
+    <title>Regole Del Gruppo</title>
+    <link rel="shortcut icon" href="img/tg-logo.png" type="image/x-icon">
+
+    <style>
+        body{
+            background-color: rgb(40, 40, 123);
+            color: white;
+            font-family: Georgia, 'Times New Roman';
+        }
+        #container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        #welcome{
+            padding: 40px;
+            font-size: 350%;
+            transform: scaleX(0%) scaleY(0%);
+            animation: benv 1s ease forwards;
+        }
+        @keyframes benv{
+            0%{
+                color: rgb(40, 40, 123);
+                transform: scaleX(0%) scaleY(0%);
+            }
+            25%{
+                transform: scaleX(35%) scaleY(50%);
+            }
+            100%{
+                transform: scaleX(100%) scaleY(100%);
+                color: white;
+            }
+        }
+        .last{
+            padding: 30px;
+            font-size: 120%;
+            color: rgb(40, 40, 123);
+            animation: last 200ms ease-out 1s forwards;
+        }
+        @keyframes last{
+            0%{
+                color: rgb(40, 40, 123);;
+            }
+            100%{
+                color: white;
+            }
+        }
+        /*
+        #menu{
+            display: flex;
+            border-bottom: 2px solid white;
+            border-radius: 5px;
+        }
+        .cat{
+            padding: 15px;
+            border-radius: 5px 5px 0px 0px;
+            transition: all 0.2s;
+        }
+        .cat:hover{
+            background-color: rgb(50, 50, 161);
+        }
+        .cat a{
+            color: white;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+        .cat a:hover{
+            color: rgb(154, 154, 208);
+        }
+        */
+        #home{
+            padding: 10px;
+            background-color: black;
+            border-radius: 10px;
+            transition: all 100ms;
+        }
+        #home:hover{
+            padding: 12px;
+            background-color: rgb(27, 27, 27);
+            border-radius: 15px;
+        }
+        #home a{
+            text-decoration: none;
+            color: white;
+        }
+
+        #footer{
+            font-family: 'Roboto';
+            display: flex;
+            height: auto;
+            position: fixed;
+            width: 100%;
+            height: 0vh;
+            bottom: 0px;
+            left: 0px;
+            align-items: center;
+            justify-content: center;
+            padding-bottom: 10px;
+            background-color: black;
+            border-radius: 20px 20px 0px 0px;
+            animation: sali 0.5s ease 0.7s forwards;
+        }
+        #footer a{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: underline;
+            font-size: 0%;
+            animation: sali 0.5s ease 0.7s forwards;
+        }
+        #mailto{
+            height: 100%;
+            width: 22vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-right: 1px solid white;
+        }
+        #cpr{
+            height: 100%;
+            width: 22vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: black;
+            font-size: 0%;
+            animation: sali 0.5s ease 0.7s forwards;
+        }
+        #third{
+            height: 100%;
+            width: 22vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-left: 1px solid white;
+            color: black;
+            font-size: 0%;
+            animation: sali 0.5s ease 0.7s forwards;
+        }
+        
+        @keyframes sali {
+            0%{
+                height: 0vh;
+                color: black;
+            }
+            100%{
+                height: 10vh;
+                color: white;
+                font-size: 100%;
+            }
+        }
+
+    </style>
+
 </head>
 <body>
-    <div id="testa">
-        <div id="immagine1">
-            <a href="https://t.me/YoungTechFanGroupOfficial" target="_blank">
-                <img id="telegramlogo" height="100" width="100" src="logo_telegram.jpg" alt="canale Telegram">
-            </a>
+    <div id="container">
+        <!--
+        <div id="menu">
+            cat = categoria
+            <div class="cat"><a href="./html/home.html">Home</a></div>
+            <div class="cat"><a href="./html/spam.html">Spam</a></div>
+            <div class="cat"><a href="./html/pirateria.html">Pirateria</a></div>
+            <div class="cat"><a href="./html/rispetto.html">Rispetto</a></div>
+            <div class="cat"><a href="./html/assistenza.html">Assistenza</a></div>
+            <div class="cat"><a href="./html/admin.html">Admin</a></div>
+            <div class="cat"><a href="./html/voip.html">VoIP</a></div>
         </div>
-        <div id="immagine2">
-            <a href="https://www.youtube.com/channel/UCVrqEID_IoP-dIZGabAJDvQ?view_as=subscriber" target="_blank">
-            <img height="100" width="100" src="logo_youtube.png" alt="Canale Youtube">
-            </a>
-        </div>
-        <h1>
-            <bold>
-                Regole del YoungTech Fan Group
-            </bold>
-        </h1>
-    </div>
+        -->
+        <div id="welcome">Benvenuto</div>
+        <div class="last">Qui troverai tutti i riferimenti necessari per approfondire le regole del nostro gruppo.</div>
+        <div class="last">Sentiti libero di dare un'occhiata in giro!</div>
+        <div id="home"><a href="./html/home.html">Premi qui per andare alla home</a></div>
 
-    <div id="principale">
-      <h1>Introduzione</h1>
-      <br>
-      <p>Ciao! In questo sito interamente creato dallo staff del gruppo troverai degli approfondimenti al regolamento del gruppo stesso.
-      Questi approfondimenti hanno come principale scopo quello di evitare spiacevoli inconvenienti e fraintendimenti con gli utenti.
-      Non è obbligatorio leggere gli approfondimenti, ma, nel caso avessi un dubbio, puoi sempre consultarli scrivendo nel gruppo /regole.
-      Gli admin e i moderatori, nel caso punissero un'utente del gruppo, possono fare riferimento a questi approfondimenti.
-      Per iniziare quindi, clicca l'icona in alto a sinistra e scegli l'argomento che vuoi approfondire.
-      </p>
-      <br>
-    </div>
 
-<div id="fine">
-  <br>
-  <p>© 2022 All Rights Reserved
-    by YoungTechFanGroupOfficial
-  </p>
-  <p>Contact: <a href="mailto:YoungTechFans@protonmail.com">YoungTechFans@protonmail.com</a></p>
-
-  <p>Developed by Dardan Bytyqi & Siv Pigna</p>
-</div>
-
-  <div class="menu-wrap">
-    <!--per toggler si intende che l'oggetto (in questo caso il pulsante per la navbar) passa da acceso a spento-->
-    <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
-    <div class="menu">
-      <div>
-        <div>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="spam.html">Spam</a></li>
-            <li><a href="pirateria.html">Pirateria</a></li>
-            <li><a href="rispetto.html">Rispetto</a></li>
-            <li><a href="assistenza.html">Assistenza</a></li>
-            <li><a href="admin.html">Admin</a></li>
-            <li><a href="voip.html">Voip</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="notification center">
-    <input type="checkbox" name="" id="">
-    <div class="num number center">1</div>
-    <div class="box">
-        <div class="heading center">
-            <p><i class="fas fa-bell"></i> <span class="number">1</span> Notifica</p>
-        </div>
-        
-        <div class="notification_box">
-          <h2><b>Ultimo video:</b></h2>
-            <p><i class="fab fa-youtube"></i></i><a href="https://youtu.be/h9OeJbIP70Y" target="_blank">https://youtu.be/lpJiHpv7l0M</a></p>
-            
+        <div id="footer">
+            <div id="mailto"><a href="mailtoYoungTechFans@protonmail.com">Scrivici una Mail!</a></div>
+            <div id="cpr">© Copyright 2023</div>
+            <div id="third">Fatto dallo Staff</div>
         </div>
     </div>
-</div>
-
-
-
-
-
 </body>
 </html>
