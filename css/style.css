@@ -146,3 +146,16 @@ body{
     justify-content: center;
     border-left: 1px solid white;
 }
+@media screen and (max-width: 1000px){
+    #mailto{
+        border: 0px;
+    }
+    #third{
+        border: 0px;
+    }
+    #menu{
+        display: flex;
+        border-bottom: 2px solid white;
+        overflow-x: scroll;
+    }
+}
