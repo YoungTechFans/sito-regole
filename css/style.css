@@ -158,4 +158,13 @@ body{
         border-bottom: 2px solid white;
         overflow-x: scroll;
     }
+    #reggrup{
+        font-size: 0%;
+    }
+    #credits{
+        font-size: 0%;
+    }
+    #credits:hover{
+        font-size: 0%;
+    }
 }
