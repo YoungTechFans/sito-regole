@@ -148,9 +148,14 @@ body{
 }
 @media screen and (max-width: 1000px){
     #mailto{
+        font-size: 70%;
         border: 0px;
     }
+    #cpr{
+        font-size: 70%;
+    }
     #third{
+        font-size: 70%;
         border: 0px;
     }
     #menu{
